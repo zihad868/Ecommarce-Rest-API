@@ -11,7 +11,7 @@ class Category(models.Model):
         ordering = ['title']
         
     def __str__(self):
-        self.title
+        return self.title
         
         
 class Product(models.Model):
@@ -27,4 +27,3 @@ class Product(models.Model):
     
     def __str__(self) -> str:
         return self.title
-    
